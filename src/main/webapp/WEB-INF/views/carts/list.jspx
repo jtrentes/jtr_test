@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_petshop_domain_Cart" items="${carts}" z="dKNsmqQiPf9DcNz1obs0cDDJhTU=">
+        <table:table data="${carts}" id="l_com_genmymodel_petshop_domain_Cart" path="/carts" z="mGiPbIpkepzSafBC3a8eE/M2W5M=">
+            <table:column date="true" dateTimePattern="${cart_creationdate_date_format}" id="c_com_genmymodel_petshop_domain_Cart_creationDate" property="creationDate" z="8bOSAak4xTw7EcUyDc+yBVEuB0c="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Cart_customer" property="customer" z="SWL74uQ9hDfe1pMwkf5CPtWLbp8="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Cart_order_" property="order_" z="3Z0FIsB9nOCH9egHvgqlA4EOT5I="/>
+        </table:table>
+    </page:list>
+</div>

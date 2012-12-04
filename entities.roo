@@ -1,0 +1,47 @@
+
+# Entities and attributes
+enum type --class ~.reference.OrderStatus
+enum constant --name preparation
+enum constant --name expedition
+
+entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
+field string --fieldName name_
+field string --fieldName description
+entity jpa --class ~.domain.Item --sequenceName ITEM_SEQ
+field number --fieldName price --type java.lang.Double --primitive
+field string --fieldName quantity
+entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
+field string --fieldName firstName
+field string --fieldName lastName
+entity jpa --class ~.domain.Address --sequenceName ADDRESS_SEQ
+field string --fieldName line1
+field string --fieldName line2
+field string --fieldName city
+field string --fieldName country
+entity jpa --class ~.domain.Cart --sequenceName CART_SEQ
+field other --fieldName creationDate --type java.util.Date 
+entity jpa --class ~.domain.Order_ --sequenceName ORDER__SEQ
+field string --fieldName reference
+field string --fieldName date_
+field enum --fieldName status --type ~.reference.OrderStatus 
+entity jpa --class ~.domain.Food --sequenceName FOOD_SEQ --extends ~.domain.Product
+entity jpa --class ~.domain.Toy --sequenceName TOY_SEQ --extends ~.domain.Product
+entity jpa --class ~.domain.MyClass --sequenceName MYCLASS_SEQ
+field string --fieldName attribute_
+
+
+# References (relations between entities)
+field reference --fieldName product --type Product --class  ~.domain.Item --cardinality MANY_TO_ONE
+field reference --fieldName address --type Address --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field reference --fieldName carts --type Cart --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field set --fieldName orders --type Order_ --class  ~.domain.Customer --cardinality ONE_TO_MANY
+field set --fieldName items --type Item --class  ~.domain.Cart --cardinality ONE_TO_MANY
+field reference --fieldName customer --type Customer --class  ~.domain.Cart --cardinality ONE_TO_ONE
+field reference --fieldName order_ --type Order_ --class  ~.domain.Cart --cardinality ONE_TO_ONE
+field reference --fieldName cart --type Cart --class  ~.domain.Order_ --cardinality ONE_TO_ONE
+field set --fieldName items --type Item --class  ~.domain.Order_ --cardinality MANY_TO_MANY
+field reference --fieldName customer --type Customer --class  ~.domain.Order_ --cardinality MANY_TO_ONE
+field reference --fieldName deliveryAddress --type Address --class  ~.domain.Order_ --cardinality MANY_TO_ONE
+field reference --fieldName paymentAddress --type Address --class  ~.domain.Order_ --cardinality MANY_TO_ONE
+
+

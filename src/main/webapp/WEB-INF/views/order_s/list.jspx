@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_petshop_domain_Order_" items="${order_s}" z="3lGv4w4VgDNbFFNRlqzWzivSBtE=">
+        <table:table data="${order_s}" id="l_com_genmymodel_petshop_domain_Order_" path="/order_s" z="+8v9QI6lFIIQzrHipFWZyCK5KaI=">
+            <table:column id="c_com_genmymodel_petshop_domain_Order__reference" property="reference" z="TPSRbtumV9oma8HHvIrH0Ov5nOw="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Order__date_" property="date_" z="B0bc3SXVRzy7MFe1NXeZmfHt2mk="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Order__status" property="status" z="M5gyZwxl1F5+chluqLNY/eVccWs="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Order__cart" property="cart" z="3PTsA6FYEHYIyKscDuMMTbYYoKs="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Order__items" property="items" z="DCYjczXSPl55OCqC0nEPt1bxHoA="/>
+            <table:column id="c_com_genmymodel_petshop_domain_Order__customer" property="customer" z="nGm5IhV8Rqu2Sf8b6YFJ2LYnA2M="/>
+        </table:table>
+    </page:list>
+</div>

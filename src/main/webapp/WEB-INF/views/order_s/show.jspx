@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_petshop_domain_Order_" object="${order_}" path="/order_s" z="i5ygb5KVzmJzojjUUfJgb0FzpWM=">
+        <field:display field="reference" id="s_com_genmymodel_petshop_domain_Order__reference" object="${order_}" z="9WMlgYDIJ8j6EN1bSzdLtqFOeXA="/>
+        <field:display field="date_" id="s_com_genmymodel_petshop_domain_Order__date_" object="${order_}" z="ZpF3S1U/pdCnUEpgPXhxrvaP2os="/>
+        <field:display field="status" id="s_com_genmymodel_petshop_domain_Order__status" object="${order_}" z="8/B1Lkd8q5Ul4bkMlJNHtv/ISSA="/>
+        <field:display field="cart" id="s_com_genmymodel_petshop_domain_Order__cart" object="${order_}" z="zucyOWeaCBQMtqVroJ0Ied0qbvg="/>
+        <field:display field="items" id="s_com_genmymodel_petshop_domain_Order__items" object="${order_}" z="HUh8lgM+2Ws82hLv77hCpsr5oUM="/>
+        <field:display field="customer" id="s_com_genmymodel_petshop_domain_Order__customer" object="${order_}" z="kQmwcCZ3OIjr7+1HEQALOU5olBE="/>
+        <field:display field="deliveryAddress" id="s_com_genmymodel_petshop_domain_Order__deliveryAddress" object="${order_}" z="lHfDFlJqP/Nn87eFtDwVbm5uuk8="/>
+        <field:display field="paymentAddress" id="s_com_genmymodel_petshop_domain_Order__paymentAddress" object="${order_}" z="+F2OTODdILRurXJa9EjKrItu6FI="/>
+    </page:show>
+</div>

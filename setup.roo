@@ -1,0 +1,6 @@
+project --topLevelPackage com.genmymodel.petshop --projectName petshop
+
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+
+logging setup --level INFO
+

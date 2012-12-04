@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_genmymodel_petshop_domain_Order_" modelAttribute="order_" path="/order_s" versionField="Version" z="O8WZip7y5nVHFU+VJSeUU4BqgMw=">
+        <field:input field="reference" id="c_com_genmymodel_petshop_domain_Order__reference" z="B47VI6/48FwtRStLS/UAMMpma9o="/>
+        <field:input field="date_" id="c_com_genmymodel_petshop_domain_Order__date_" z="nX/ju4MvsvFR4HhTcUq/iBe8p7A="/>
+        <field:select field="status" id="c_com_genmymodel_petshop_domain_Order__status" items="${orderstatuses}" path="orderstatuses" z="ztu49QDkDr1+GBpxvsT4CKwLF6o="/>
+        <field:select field="cart" id="c_com_genmymodel_petshop_domain_Order__cart" itemValue="id" items="${carts}" path="/carts" z="BwUjmH4o2OZlbNwlKHM58wCD3og="/>
+        <field:select field="items" id="c_com_genmymodel_petshop_domain_Order__items" itemValue="id" items="${items}" multiple="true" path="/items" z="hvRJqksVZvDHzdhesxQKbz8S060="/>
+        <field:select field="customer" id="c_com_genmymodel_petshop_domain_Order__customer" itemValue="id" items="${customers}" path="/customers" z="emgW/xG7T91nAda/i5xex1smdQY="/>
+        <field:select field="deliveryAddress" id="c_com_genmymodel_petshop_domain_Order__deliveryAddress" itemValue="id" items="${addresses}" path="/addresses" z="uaW2nSjPuJhmrE47LImSl3/F8vI="/>
+        <field:select field="paymentAddress" id="c_com_genmymodel_petshop_domain_Order__paymentAddress" itemValue="id" items="${addresses}" path="/addresses" z="EuQ9rXfYzhGpI/jDPJi5tOl6jW8="/>
+    </form:update>
+</div>
