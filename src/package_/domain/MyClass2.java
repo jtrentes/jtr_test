@@ -8,25 +8,25 @@ public class MyClass2
 
 	
 	
-	private Long id;
+	private MyClass myclass;
     
 
 	
-	public Long getId () 
+	public MyClass getMyclass () 
 	{
-		return this.id;	
+		return this.myclass;	
 	}
 
 	
-	public void setId (Long myId) 
+	public void setMyclass (MyClass myMyclass) 
 	{
-		this.id = myId;	
+		this.myclass = myMyclass;	
 	}
 
 	
-	public void unsetId () 
+	public void unsetMyclass () 
 	{
-		this.id = null;	
+		this.myclass = null;	
 	}
 
 
